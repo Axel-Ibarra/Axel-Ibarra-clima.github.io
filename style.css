@@ -1,0 +1,61 @@
+@keyframes brackground-animation {
+    from {background-color: #bbded6;}
+    to {background-color: #dadada;}
+  }
+
+  html{
+      font-family: roboto;
+      text-decoration: none;
+  }
+
+body{
+    background-color: #dadada;
+    animation-name: brackground-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    
+}
+
+.big-container{
+    box-shadow: 1px 1px 19px black;
+    border-radius: 50px;
+    background-color: #204969;
+}
+
+#contenedor-p{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    border: 1px solid #000000;
+    background-color: #808080;
+    border-radius: 50px;
+    line-height: 45px;
+    
+}
+li{
+    box-shadow: 1px 1px 4px black;
+    border-radius: 10px;
+    list-style: none;
+    background-color: #ffffff;
+    
+}
+
+ul{
+    font-size: 20px;
+    border: 10px;
+}
+
+p{
+    display: flex;
+    margin-bottom: 20px;
+}
