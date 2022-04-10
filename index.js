@@ -1,5 +1,6 @@
 let longitude;
 let latitude;
+let button = document.getElementById("button");
 let date = document.getElementById(`day`);
 let country = document.getElementById(`country`)
 let city = document.getElementById(`population`);
@@ -9,14 +10,17 @@ let cloud = document.getElementById(`clouds`);
 let humidity = document.getElementById(`humidity`);
 let visibility = document.getElementById(`visibility`);
 let pressure = document.getElementById(`pressure`);
-
 let cloudsPic = document.getElementById(`clouds-pic`);
 
 
 
 //se corrobora que el navegador tenga geolocalización activada
-if(navigator.geolocation){
-
+function localidadAct(){
+    // navigator.geolocation
+    // if(!navigator.geolocation){
+    // navigator.geolocation
+    if(navigator.geolocation){
+    document.getElementById("button").disabled = true;
     navigator.geolocation.getCurrentPosition(position =>{
         longitude = position.coords.longitude
         latitude = position.coords.latitude
@@ -99,6 +103,11 @@ if(navigator.geolocation){
         getData()
     })
 }
+}
+// else if(navigator.geolocation = true){
+    // return alert("ya hemos detectado tu ubicacion!")
+// }
+// }
 
 window.addEventListener('load',()=>{
     const bodys = document.querySelector(`body`);
