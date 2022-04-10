@@ -25,6 +25,14 @@ body{
     width: 100%;
     
 }
+#button{
+    display: block;
+    border-radius: 25px;
+    height: 30px;
+    background-color: #17bed4;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .big-container{
     box-shadow: 1px 1px 19px black;
