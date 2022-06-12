@@ -72,32 +72,30 @@ function localidadAct(){
                 meters = data.visibility;
                 kilometres = meters / 1000;
 
-                //Adicion de los datos a sus respectivos ids html
+                //Adicion de los datos a sus respectivos "ids" html
                 date.textContent = `Fecha Actual: ${actualDate.toLocaleDateString()}`
                 country.textContent = `País: ${data.sys.country}`;
                 city.textContent = `Ciudad: ${data.name}`;
+
                 if(tempC >= 0){
                     temp.textContent = `Grados: +${Math.round(tempC)}°C`;
-                    }else{
-                        temp.textContent = `Grados: ${Math.round(tempC)}°C`;
+                }else{
+                    temp.textContent = `Grados: ${Math.round(tempC)}°C`;
                 }
                 if(feelC >= 0){
                     feel.textContent = `Sensación Térmica: +${Math.round(feelC)}°C`
-                    }else{
-                        temp.textContent = `Sensación Térmica: ${Math.round(feelC)}°C`;
+                }else{
+                    temp.textContent = `Sensación Térmica: ${Math.round(feelC)}°C`;
                 }
                 
                 cloud.textContent = `Porcentaje de nubes: ${data.clouds.all} %`;
                 humidity.textContent = `Humedad: ${data.main.humidity} %`;
                 if(kilometres > 1){
-                        visibility.textContent = `Visibilidad: ${kilometres} Kilómetros`;
-                    }else{
-                        visibility.textContent = `Visibilidad: ${meters} Metros`;
+                    visibility.textContent = `Visibilidad: ${kilometres} Kilómetros`;
+                }else{
+                    visibility.textContent = `Visibilidad: ${meters} Metros`;
                 }
-
                 pressure.textContent = `Presion: ${data.main.pressure} mb`;
-                
-
             } 
             getData()
         })

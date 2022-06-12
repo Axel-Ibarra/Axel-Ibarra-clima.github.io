@@ -1,15 +1,16 @@
-@keyframes brackground-animation {
+/* @keyframes brackground-animation {
     from {background-color: #bbded6;}
     to {background-color: #dadada;}
-  }
+  } */
 
   html{
       font-family: roboto;
       text-decoration: none;
+      background-color: #ffffff;
   }
 
 body{
-    background-color: #dadada;
+    /* background-color: #dadada; */
     animation-name: brackground-animation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -27,17 +28,18 @@ body{
 }
 #button{
     display: block;
-    border-radius: 25px;
-    height: 30px;
-    background-color: #17bed4;
+    /* border-radius: 25px; */
+    /* height: 30px; */
+    /* background-color: #17bed4; */
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 }
 
 .big-container{
     box-shadow: 1px 1px 19px black;
     border-radius: 50px;
-    background-color: #204969;
+    background-color: #aee2f0;
 }
 
 #contenedor-p{
@@ -45,7 +47,7 @@ body{
     justify-content: space-evenly;
     margin-top: 25px;
     border: 1px solid #000000;
-    background-color: #808080;
+    background-color: #91c0cd;
     border-radius: 50px;
     line-height: 45px;
     
